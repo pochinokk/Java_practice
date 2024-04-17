@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.example'
+    }
+}
+
+
+task task1 {
+    task1.dependsOn jar
+    copy {
+        from jar
+        into 'docker'
+    }
+    finalizedBy {
+        Docker
+    }
+}
+
+task Docker(type: Exec) {
+    commandLine "docker", "build", "-t", "${project.name}:${project.version}", "."
+    commandLine "docker", "run", "-t", "docker.io/library/${project.name}:${project.version}"
+}
