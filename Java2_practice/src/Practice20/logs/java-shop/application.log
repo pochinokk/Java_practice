@@ -1,0 +1,42 @@
+766  [main] INFO  c.e.P.Practice20Application – Starting Practice20Application using Java 17.0.10 with PID 8004 (D:\Projects\Java_practice2\Practice20\build\classes\java\main started by Dima in D:\Projects\Java_practice2\Practice20)
+769  [main] INFO  c.e.P.Practice20Application – No active profile set, falling back to 1 default profile: "default"
+1338 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1432 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 87 ms. Found 2 JPA repository interfaces.
+1761 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port 8080 (http)
+1801 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1804 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1804 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.20]
+1843 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1843 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1027 ms
+1918 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2032 [main] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1fe8f5e8
+2033 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2070 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+2098 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.4.4.Final
+2118 [main] INFO  o.h.c.i.RegionFactoryInitiator – HHH000026: Second-level cache disabled
+2265 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo – No LoadTimeWeaver setup: ignoring JPA class transformer
+2304 [main] WARN  org.hibernate.orm.deprecation – HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2876 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2878 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3040 [main] INFO  c.e.Practice20.service.GameService – Create Game repo
+3095 [main] INFO  c.e.Practice20.service.LevelService – Create level repo
+3153 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3368 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3379 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port 8080 (http) with context path ''
+3385 [main] INFO  c.e.P.Practice20Application – Started Practice20Application in 2.909 seconds (process running for 3.71)
+6409 [http-nio-8080-exec-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+6409 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+6410 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+6434 [http-nio-8080-exec-7] INFO  com.example.Practice20.Aspect – 2024-04-25 18:27:58
+6434 [http-nio-8080-exec-7] INFO  c.e.Practice20.service.GameService – Read all games
+9037 [http-nio-8080-exec-10] INFO  com.example.Practice20.Aspect – 2024-04-25 18:28:00
+9037 [http-nio-8080-exec-10] INFO  c.e.Practice20.service.LevelService – Find all levels
+148516 [http-nio-8080-exec-8] INFO  com.example.Practice20.Aspect – 2024-04-25 18:30:20
+148516 [http-nio-8080-exec-8] INFO  c.e.Practice20.service.LevelService – Save the level
+254839 [http-nio-8080-exec-4] INFO  com.example.Practice20.Aspect – 2024-04-25 18:32:06
+254839 [http-nio-8080-exec-4] INFO  c.e.Practice20.service.LevelService – Save the level
+273074 [http-nio-8080-exec-1] INFO  com.example.Practice20.Aspect – 2024-04-25 18:32:24
+273074 [http-nio-8080-exec-1] INFO  c.e.Practice20.service.LevelService – Save the level
+489512 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+489513 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+489515 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
