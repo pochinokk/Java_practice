@@ -1,0 +1,5 @@
+program:
+  student:
+    name: Dmitry
+    last_name: Ivanov
+    group: IKBO-30-22
